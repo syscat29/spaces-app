@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     description: 'Renting spaces made easy',
     images: [
       {
-        url: '/og-image.png',
-        type: 'image/png',
+        url: '/og_image.jpg',
+        type: 'image/jpg',
         width: 1200,
         height: 630,
       },
