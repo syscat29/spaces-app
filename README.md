@@ -30,23 +30,21 @@ Build a simple platform where users can:
 
 ### Things to Do
 
-
 Project Setup
-- [ ] Create a new Next.js project with TypeScript and Tailwind CSS
-- [ ] Install Supabase dependencie
-- [ ] Set up environment variables for Supabase connection
-- [ ] Organize project folders (you can choose your own structure)
+- [x] Create a new Next.js project with TypeScript and Tailwind CSS
+- [x] Install Supabase dependencie
+- [x] Set up environment variables for Supabase connection
+- [x] Organize project folders (you can choose your own structure)
 
 Database Setup
-- [ ] Create a Supabase project
-- [ ] Design and create a `spaces` table with necessary fields (id, title, description, city, capacity, price, images, etc.)
-- [ ] Set up Row Level Security (RLS) policies to allow public read access
-- [ ] Insert 5-10 sample spaces for testing
-
+- [x] Create a Supabase project
+- [x] Design and create a `spaces` table with necessary fields (id, title, description, city, capacity, price, images, etc.)
+- [x] Set up Row Level Security (RLS) policies to allow public read access
+- [x] Insert 5-10 sample spaces for testing
 
 Presentation Layer - Pages
-- [ ] Create a homepage that displays all spaces
-- [ ] Create a dynamic route for space detail pages (`/spaces/[id]`)
+- [x] Create a homepage that displays all spaces
+- [x] Create a dynamic route for space detail pages (`/spaces/[id]`)
 - [ ] Ensure pages use use cases (not repositories directly)
 - [ ] Handle loading and error states appropriately
 - [ ] Use Next.js metadata API for SEO
