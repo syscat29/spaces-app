@@ -11,7 +11,7 @@ export async function getSpaces(
   let query = db.from('spaces').select('*');
 
   if (name) query = query.ilike('title', `%${name}%`);
-  if (city) query = query.ilike('city', city);
+  if (city) query = query.ilike('city', `%${city}%`);
 
   const { data } = await query;
 

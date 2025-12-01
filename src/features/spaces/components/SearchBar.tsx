@@ -64,7 +64,7 @@ export default function SearchBar({
 
   return (
     <Card className='flex flex-col sm:flex-row gap-4 items-center p-4'>
-      <div className='flex-1 space-y-1'>
+      <div className='w-full flex-1 space-y-1'>
         <label className='text-xs text-background uppercase tracking-widest block'>
           Name
         </label>
