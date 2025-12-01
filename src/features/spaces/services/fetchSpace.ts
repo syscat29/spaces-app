@@ -7,7 +7,7 @@ export async function getSpace(id: string): Promise<Space> {
 
   const { data, error } = await db
     .from('spaces')
-    .select('*')
+    .select()
     .eq('id', spaceId)
     .single();
 

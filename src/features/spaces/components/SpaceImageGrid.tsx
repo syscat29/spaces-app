@@ -37,7 +37,7 @@ export default function SpaceImageGrid({ images }: { images: string[] }) {
   return (
     <>
       <div
-        className='relative w-full h-[360px] group cursor-pointer'
+        className='relative w-full aspect-video group cursor-pointer'
         onClick={() => setIsModalOpen(true)}
       >
         <div className='relative w-full h-full overflow-hidden rounded-lg'>
@@ -57,7 +57,7 @@ export default function SpaceImageGrid({ images }: { images: string[] }) {
                 e.preventDefault();
                 prevImage(e);
               }}
-              className='absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300'
+              className='absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer'
               aria-label='Previous image'
             >
               <ChevronLeft className='w-6 h-6 text-gray-800' />
@@ -68,7 +68,7 @@ export default function SpaceImageGrid({ images }: { images: string[] }) {
                 e.preventDefault();
                 nextImage(e);
               }}
-              className='absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300'
+              className='absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer'
               aria-label='Next image'
             >
               <ChevronRight className='w-6 h-6 text-gray-800' />
@@ -101,7 +101,7 @@ export default function SpaceImageGrid({ images }: { images: string[] }) {
         <div className='fixed inset-0 z-50 bg-black/95 flex flex-col items-center justify-center p-4 h-full'>
           <button
             onClick={() => setIsModalOpen(false)}
-            className='absolute top-4 right-4 p-2 text-white/70 hover:text-white transition-colors'
+            className='absolute top-4 right-4 p-2 text-white/70 hover:text-white transition-colors cursor-pointer'
             aria-label='Close modal'
           >
             <X className='w-8 h-8' />
@@ -120,7 +120,7 @@ export default function SpaceImageGrid({ images }: { images: string[] }) {
               <>
                 <button
                   onClick={prevImage}
-                  className='absolute left-0 top-1/2 -translate-y-1/2 p-4 text-white/70 hover:text-white transition-colors'
+                  className='absolute left-0 top-1/2 -translate-y-1/2 p-4 text-white/70 hover:text-white transition-colors cursor-pointer'
                 >
                   <ChevronLeft className='w-10 h-10' />
                 </button>

@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
-import { getSpace } from '@/server/spaces';
 import { cache } from 'react';
 import { notFound } from 'next/navigation';
 import SpaceDetails from '@/features/spaces/components/SpaceDetails';
+import { getSpace } from '@/features/spaces/services/fetchSpace';
 
 // TODO: Make this a function and move to its own file
 const getSpaceById = cache(getSpace);

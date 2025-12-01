@@ -1,8 +1,8 @@
 import SearchBar from '@/features/spaces/components/SearchBar';
 import Spaces from '@/features/spaces/components/Spaces';
+import { getSpaces } from '@/features/spaces/services/fetchSpaces';
 import SearchBarsSkeleton from '@/features/spaces/skeletons/SearchBarSkeleton';
 import SpacesSkeleton from '@/features/spaces/skeletons/SpacesSkeleton';
-import { getSpaces } from '@/server/spaces';
 import { Suspense } from 'react';
 
 interface PageProps {
