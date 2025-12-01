@@ -1,19 +1,15 @@
 import { Space } from '@/lib/types/space';
 import Image from 'next/image';
 
-// I effed up so we do this to randomize the first image
-const randomImage = (space: Space) =>
-  space.images[Math.floor(Math.random() * space.images.length)];
-
 export default function SpaceCard({ space }: { space: Space }) {
   return (
     <div className='relative group bg-foreground text-[#666] h-full'>
       <div className='absolute -z-10 w-full h-full top-2 left-2 bg-card-shadow transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1' />
 
       <div className='grid p-6'>
-        <div className='border border-[#333] mb-4 relative aspect-video transition-colors duration-300 group-hover:border-[#555]'>
+        <div className='border border-border mb-4 relative aspect-video transition-colors duration-300 group-hover:border-[#555]'>
           <Image
-            src={randomImage(space)}
+            src={space.images[0]}
             alt={space.title}
             fill
             className='bg-cover'

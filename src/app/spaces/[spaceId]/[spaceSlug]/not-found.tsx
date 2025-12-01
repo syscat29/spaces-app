@@ -6,7 +6,7 @@ export default function NotFound() {
       <h2 className='text-4xl font-bold mb-4'>404 - Space Not Found</h2>
       <p className='text-lg mb-4'>Could not find the requested space.</p>
       <Link href='/'>
-        <a className='text-blue-600 hover:underline'>Return to homepage</a>
+        <span className='text-blue-600 hover:underline'>Return to homepage</span>
       </Link>
     </div>
   );
