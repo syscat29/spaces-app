@@ -31,7 +31,17 @@ export default function SpaceImageGrid({ images }: { images: string[] }) {
   };
 
   if (!images || images.length === 0) {
-    return <div className='w-full h-[360px] bg-gray-200 rounded-lg' />;
+    return <div className='w-full aspect-video bg-gray-200 rounded-lg' />;
+  }
+
+  if (typeof window !== 'undefined') {
+    window.addEventListener('keydown', (e: KeyboardEvent) => {
+      e.preventDefault()
+
+      if (e.key === 'Escape') {
+        setIsModalOpen(false);
+      }
+    });
   }
 
   return (
