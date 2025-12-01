@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function SpaceDetails({ space }: { space: Space }) {
   return (
-    <section className='flex flex-col md:flex-row gap-6'>
+    <section className='flex flex-col md:flex-row gap-12 md:gap-6'>
       <div className='space-y-6'>
         <div className='space-y-1'>
           <h2 className='text-4xl font-bold'>{space.title}</h2>

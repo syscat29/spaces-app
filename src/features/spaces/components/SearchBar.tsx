@@ -23,6 +23,13 @@ export default function SearchBar({
 
   const debouncedName = useDebounce(name, 300);
 
+  // useEffect(() => {
+  //   if (searchParams.toString()) {
+  //     router.replace(pathname);
+  //   }
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
+
   useEffect(() => {
     setName(initialName);
   }, [initialName]);
@@ -70,6 +77,7 @@ export default function SearchBar({
         </label>
         <input
           onChange={(e) => handleSearch(e)}
+          value={name}
           type='text'
           placeholder='Enter name to search'
           className='w-full bg-[#0a0a0a] border border-[#333] text-[#b3b3b3] px-3 py-2 text-xs focus:outline-none focus:border-[#555] focus:bg-black transition-all placeholder-[#555]'
@@ -81,6 +89,7 @@ export default function SearchBar({
         </label>
         <select
           onChange={handleCity}
+          value={city}
           id='city'
           className='w-full bg-[#0a0a0a] border border-[#333] text-[#b3b3b3] px-3 py-2 text-xs focus:outline-none focus:border-[#555] focus:bg-black transition-all placeholder-[#555]'
         >

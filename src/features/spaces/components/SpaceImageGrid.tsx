@@ -8,7 +8,7 @@ export default function SpaceImageGrid({ images }: { images: string[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Lock body scroll when modal is open
+  // Lock scroll when modal is open
   useEffect(() => {
     if (isModalOpen) {
       document.body.style.overflow = 'hidden';
@@ -98,7 +98,7 @@ export default function SpaceImageGrid({ images }: { images: string[] }) {
 
       {/* Full Screen Modal */}
       {isModalOpen && (
-        <div className='fixed inset-0 z-50 bg-black/95 flex flex-col items-center justify-center p-4'>
+        <div className='fixed inset-0 z-50 bg-black/95 flex flex-col items-center justify-center p-4 h-full'>
           <button
             onClick={() => setIsModalOpen(false)}
             className='absolute top-4 right-4 p-2 text-white/70 hover:text-white transition-colors'

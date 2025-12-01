@@ -4,7 +4,7 @@ import { Space } from '@/lib/types/space';
 export default function SpaceAvailabilityCard({ space }: { space: Space }) {
   return (
     <div className='sticky top-4'>
-      <Card className='w-90 px-6 py-8 flex flex-col'>
+      <Card className='w-full sm:w-90 px-6 py-8 flex flex-col'>
         <div className='mb-6 text-center space-y-2 text-[#888]'>
           <p className='text-sm'>Add details to view total price</p>
           <p>
